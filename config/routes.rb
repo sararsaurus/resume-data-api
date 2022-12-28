@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/educations/:id" => "educations#show"
   post "/educations" => "educations#create"
   patch "/educations/:id" => "educations#update"
-  delete "/educations" => "educations#destroy"
+  delete "/educations/:id" => "educations#destroy"
 
   ### SESSIONS
   post "/sessions" => "sessions#create"

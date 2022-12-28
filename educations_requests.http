@@ -1,0 +1,28 @@
+### Educations Index
+GET http://localhost:3000/educations.json
+
+
+### Educations Show
+GET http://localhost:3000/educations/1.json
+
+
+### Educations Create
+POST http://localhost:3000/educations.json
+Content-Type: application/json
+
+{
+  "start_date": "08-20-2017",
+  "end_date": "08-20-2021",
+  "degree": "Advanced Machine Learning",
+  "university_name": "Neural Networks R US",
+  "details": "I don't know why it's not working."
+}
+
+
+### Educations Update
+PATCH http://localhost:3000/educations/5.json
+Content-Type: application/json
+
+{
+  "start_date": "02-15-2018"
+}
