@@ -21,3 +21,21 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/students/6.json
+
+### CREATE STUDENT
+PATCH  http://localhost:3000/students/7
+Content-Type: application/json
+
+{
+  "first_name": "Sam",
+  "last_name":  "Wise",
+  "email":  "sam@example.com",
+  "phone_number": "123-456-4789",
+  "short_bio":  "I am the best Hobbit",
+  "linkedin_url": "linkedin.com/in/samwise",
+  "twitter_handle":"twitter.com/Samwise",
+  "online_resume_url": "Samwise.com/resume",
+ "github_url": "github.com/Samwise",
+ "photo_url": "https://static.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241",
+ "personal_website_url": "samwise.com/aboutme"
+}
