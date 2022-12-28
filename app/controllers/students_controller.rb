@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @students = Student.new(
+    students = Student.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
@@ -19,8 +19,10 @@ class StudentsController < ApplicationController
       personal_website_url: params[:personal_website_url],
 
     )
-    @students.save
-    if @students.save
+    if students.save
+      render json: students
+    else
+      render json: { errors: students.errors.full_messages }, status: :bad_request
     end
   end
 
