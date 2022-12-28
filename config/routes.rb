@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   post "/educations" => "educations#create"
   patch "/educations/:id" => "educations#update"
   delete "/educations" => "educations#destroy"
+
+  ### SESSIONS
+  post "/sessions" => "sessions#create"
 end
