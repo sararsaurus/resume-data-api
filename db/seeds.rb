@@ -14,3 +14,11 @@
 # Student.create!(first_name: "Hannah", last_name: "Kehoe", email: "hannah@example.com", phone_number: "123-445-4789", short_bio: "Hello, I am Hannah. I am a baby Software Developer", linkedin_url: "linkedin.com", twitter_handle: "twitter.com", online_resume_url: "resume.com", github_url: "github.com", photo_url: "https://listverse.com/wp-content/uploads/2020/05/iu-40.jpeg", personal_website_url: "hannah.com")
 
 # Student.create!(first_name: "Keosha", last_name: "Young", email: "keosha@example.com", phone_number: "123-445-4789", short_bio: "hi im keosha", linkedin_url: "linkedin.com", twitter_handle: "twitter.com", online_resume_url: "resume.com", github_url: "github.com", photo_url: "photo.com", personal_website_url: "keosha.com")
+
+Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Paleontology", university_name: "Lakewood Elementary") #Hannah
+
+Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Supernaturalism", university_name: "Dispenza College") #Steven
+
+Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Musicality", university_name: "Cool Bands University") #Connor
+
+Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Fashion", university_name: "More Shoes School") #Keosha
