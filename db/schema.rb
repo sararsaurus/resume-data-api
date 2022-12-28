@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_28_190209) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_28_191538) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,32 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_190209) do
     t.string "capstone_screenshot"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.date "start_date"
+    t.date "end_date"
+    t.string "job_title"
+    t.string "company_name"
+    t.text "details"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.boolean "python", default: false
+    t.boolean "javascript", default: false
+    t.boolean "java", default: false
+    t.boolean "c", default: false
+    t.boolean "C", default: false
+    t.boolean "Cplus", default: false
+    t.boolean "GO", default: false
+    t.boolean "R", default: false
+    t.boolean "swift", default: false
+    t.boolean "PHP", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "other"
   end
 
   create_table "students", force: :cascade do |t|
@@ -38,4 +64,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_190209) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end
