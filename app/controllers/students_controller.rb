@@ -16,7 +16,8 @@ class StudentsController < ApplicationController
       online_resume_url: params[:online_resume_url],
       github_url: params[:github_url],
       photo_url: params[:photo_url],
-      personal_website_url: params[:personal_website_url],
+      personal_website_url: params[:personal_website_url], password: params[:password],
+      password_confirmation: params[:password_confirmation],
 
     )
     if students.save
