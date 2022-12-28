@@ -26,3 +26,6 @@ Content-Type: application/json
 {
   "start_date": "02-15-2018"
 }
+
+### Educations Destroy
+DELETE http://localhost:3000/educations/1.json
