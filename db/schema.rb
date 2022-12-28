@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_12_28_202930) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_12_28_231617) do
+>>>>>>> 3d9f0d53b2ce21623868700b27072f9e6eabe88e
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +78,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_202930) do
     t.string "personal_website_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
 end
