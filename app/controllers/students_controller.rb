@@ -27,11 +27,19 @@ class StudentsController < ApplicationController
   end
 
   def show
+    student = Student.find_by(id: params[:id])
+    render json: student.as_json
   end
 
   def update
   end
 
   def destroy
+    student = Student.find_by(id: params[:id])
+    if student.delete
+      render json: { message: "Student Succesfully Removed" }
+    else
+      render json: { errors: student.errors.full_messages }, status: :bad_request
+    end
   end
 end
