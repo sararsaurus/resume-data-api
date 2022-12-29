@@ -13,11 +13,12 @@ class SkillsController < ApplicationController
       student_id: current_student.id,
       python: params[:python],
       javascript: params[:javascript],
-      Csharp: params[:Csharp],
-      C: params[:C],
-      Cplus: params[:Cplus],
+      csharp: params[:csharp],
+      c: params[:c],
+      go: params[:go],
+      cplus: params[:cplus],
       swift: params[:swift],
-      PHP: params[:Php],
+      php: params[:php],
       other: params[:other],
     )
     if skills.save
@@ -27,21 +28,46 @@ class SkillsController < ApplicationController
     end
   end
 
-  def update
-    skill = Skill.find_by(id: params["id"])
-    skill.python = params["python"] || skill.python
-    skill.javascript = params["javascript"] || skill.javascript
-    skill.java = params["java"] || skill.java
-    skill.csharp = params["Csharp"] || skill.csharp
-    skill.c = params["c"] || skill.c
-    skill.go = params["go"] || skill.go
-    skill.r = params["r"] || skill.r
-    skill.swift = params["swift"] || skill.swift
-    skill.php = params["php"] || skill.php
-    skill.other = params["other"] || skill.other
+  def toggle_enable_status
+    skill.toggle!(:enabled)
   end
 
-  def delete
+  def update
+    skill = Skill.find_by(id: params["id"])
+
+    if skill.python != params[:python]
+      skill.toggle!(:python)
+    end
+    if skill.javascript != params[:javascript]
+      skill.toggle!(:javascript)
+    end
+    if skill.java != params[:java]
+      skill.toggle!(:java)
+    end
+    if skill.csharp != params[:csharp]
+      skill.toggle!(:csharp)
+    end
+    if skill.go != params[:go]
+      skill.toggle!(:go)
+    end
+    if skill.r != params[:r]
+      skill.toggle!(:r)
+    end
+    if skill.swift != params[:swift]
+      skill.toggle!(:swift)
+    end
+    if skill.php != params[:php]
+      skill.toggle!(:php)
+    end
+    skill.other = params["other"]
+    if skill.save
+      render json: skill.as_json
+    else
+      ender json: { errors: skill.errors.full_messages }, status: 418
+    end
+  end
+
+  def destroy
     skill = Skill.find_by(id: params[:id])
     if skill.delete
       render json: { message: "Skill Removed" }

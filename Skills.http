@@ -10,16 +10,16 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "python": true,
-  "javascript": true,
-  "java": false,
-  "Csharp": false,
-  "C": true,
+  "python": false,
+  "javascript": false,
+  "java": true,
+  "csharp": false,
+  "c": true,
   "Cplus": true,
-  "GO": false,
-  "R": false,
+  "go": false,
+  "r": false,
   "swift": true,
-  "PHP": false,
+  "php": false,
   "other": "Ruby"
 }
 
@@ -29,15 +29,18 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "python": true,
+  "python": false,
   "javascript": true,
   "java": false,
-  "Csharp": false,
-  "C": true,
-  "Cplus": true,
-  "GO": false,
-  "R": false,
-  "swift": true,
-  "PHP": false,
-  "other": "Ruby"
+  "csharp": false,
+  "c": false,
+  "cplus": true,
+  "go": false,
+  "r": false,
+  "swift": false,
+  "php": true,
+  "other": "Ruby, Ruby on Rails"
 }
+### DELETE
+DELETE http://localhost:3000/skills/7
+Authorization: Bearer {{jwt}}
