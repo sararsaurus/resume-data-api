@@ -28,6 +28,17 @@ class SkillsController < ApplicationController
   end
 
   def update
+    skill = Skill.find_by(id: params["id"])
+    skill.python = params["python"] || skill.python
+    skill.javascript = params["javascript"] || skill.javascript
+    skill.java = params["java"] || skill.java
+    skill.csharp = params["Csharp"] || skill.csharp
+    skill.c = params["c"] || skill.c
+    skill.go = params["go"] || skill.go
+    skill.r = params["r"] || skill.r
+    skill.swift = params["swift"] || skill.swift
+    skill.php = params["php"] || skill.php
+    skill.other = params["other"] || skill.other
   end
 
   def delete
