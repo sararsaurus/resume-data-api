@@ -1,4 +1,6 @@
 class ExperiencesController < ApplicationController
+  before_action :authenticate_student, except: [:index, :show]
+
   def index
     experiences = experience.all
     render json: experiences.as_json
