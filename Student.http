@@ -6,17 +6,20 @@ POST http://localhost:3000/students
 Content-Type: application/json
 
 {
-  "first_name": "Sam",
-  "last_name":  "Gee",
-  "email":  "sam@example.com",
+  "first_name": "Johnny",
+  "last_name":  "Test",
+  "email":  "test@example.com",
   "phone_number": "123-456-4789",
-  "short_bio":  "I am the best Hobbit",
-  "linkedin_url": "linkedin.com/in/samwise",
-  "twitter_handle":"twitter.com/Samwise",
-  "online_resume_url": "Samwise.com/resume",
- "github_url": "github.com/Samwise",
- "photo_url": "https://static.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241",
- "personal_website_url": "samwise.com/aboutme"
+  "short_bio":  "I do the test ",
+  "linkedin_url": "linkedin.com",
+  "twitter_handle":"twitter.com/test",
+  "online_resume_url": "resume.com/test",
+  "github_url": "github.com/test",
+  "photo_url": "https://static.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241",
+  "personal_website_url": "example.com",
+  "password": "password",
+  "password_confirmation": "password"
+
 }
 
 ###
