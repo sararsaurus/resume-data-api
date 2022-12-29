@@ -15,3 +15,15 @@ Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Sup
 Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Musicality", university_name: "Cool Bands University", student_id: 3) #Connor
 
 Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Fashion", university_name: "More Shoes School", student_id: 5) #Keosha
+
+Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Hikology", university_name: "The God Damn Rocky Mountains, baby", student_id: 2) #Sara
+
+Capstone.create!(capstone_name: "The very best capstone", capstone_description: "The best thingy I ever made", capstone_url: "verybestcapstone.com", capstone_screenshot: "very_best_capstone.url", student_id: 1)
+
+Capstone.create!(capstone_name: "I made a capstone", capstone_description: "It is a capstone", capstone_url: "IMadeACapstone.com", capstone_screenshot: "I_made_a_capstone.url", student_id: 2)
+
+Capstone.create!(capstone_name: "Look, a capstone", capstone_description: "Look, here is a capstone", capstone_url: "LookACapstone.com", capstone_screenshot: "look_its_a_capstone.url", student_id: 3)
+
+Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny bit proud of my decent capstone", capstone_url: "DecentCapstone.com", capstone_screenshot: "a_decent_capstone.url", student_id: 4)
+
+Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
