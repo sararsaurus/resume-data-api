@@ -1,0 +1,29 @@
+### SHOW CAPSTONES
+GET  http://localhost:3000/capstones.json
+
+### CREATE CAPSTONE
+POST http://localhost:3000/capstones/6.json
+Content-Type: application/json
+
+{
+  "capstone_name": "So Proud of It",
+  "capstone_description":  "Coded so hard and here we are.",
+  "capstone_url":  "SoProudOfMyCapstone.url",
+  "capstone_screenshot": "screenshot.jpg",
+  "student_id": 4
+}
+
+### DELETE CAPSTONE
+DELETE http://localhost:3000/capstones/2.json
+
+### UPDATE CAPSTONE
+PATCH  http://localhost:3000/capstones/4.json
+Content-Type: application/json
+
+{
+  "capstone_name": "So Proud of It",
+  "capstone_description":  "Coded so hard and here we are.",
+  "capstone_url":  "SoProudOfMyCapstone.url",
+  "capstone_screenshot": "screenshot.jpg",
+  "student_id": 4
+}
