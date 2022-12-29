@@ -7,23 +7,23 @@
 #   { first_name: "Johnny", last_name: "Test", email: "test@example.com", phone_number: "123-456-4789", short_bio: "I do the test ", linkedin_url: "linkedin.com", twitter_handle: "twitter.com/test", online_resume_url: "resume.com/test", github_url: "github.com/test", photo_url: "https://static.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241", personal_website_url: "example.com", password: "password", password_confirmation: "password" },
 # ])
 
-Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Paleontology", university_name: "Lakewood Elementary", student_id: 4) #Hannah
+# Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Paleontology", university_name: "Lakewood Elementary", student_id: 4) #Hannah
 
-Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Supernaturalism", university_name: "Dispenza College", student_id: 1) #Steven
+# Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Supernaturalism", university_name: "Dispenza College", student_id: 1) #Steven
 
-Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Musicality", university_name: "Cool Bands University", student_id: 3) #Connor
+# Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Musicality", university_name: "Cool Bands University", student_id: 3) #Connor
 
-Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Fashion", university_name: "More Shoes School", student_id: 5) #Keosha
+# Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Fashion", university_name: "More Shoes School", student_id: 5) #Keosha
 
-Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Hikology", university_name: "The God Damn Rocky Mountains, baby", student_id: 2) #Sara
+# Education.create!(start_date: "08-06-2020", end_date: "04-01-2022", degree: "Hikology", university_name: "The God Damn Rocky Mountains, baby", student_id: 2) #Sara
 
-Capstone.create!(capstone_name: "The very best capstone", capstone_description: "The best thingy I ever made", capstone_url: "verybestcapstone.com", capstone_screenshot: "very_best_capstone.url", student_id: 1)
+# Capstone.create!(capstone_name: "The very best capstone", capstone_description: "The best thingy I ever made", capstone_url: "verybestcapstone.com", capstone_screenshot: "very_best_capstone.url", student_id: 1)
 
-Capstone.create!(capstone_name: "I made a capstone", capstone_description: "It is a capstone", capstone_url: "IMadeACapstone.com", capstone_screenshot: "I_made_a_capstone.url", student_id: 2)
+# Capstone.create!(capstone_name: "I made a capstone", capstone_description: "It is a capstone", capstone_url: "IMadeACapstone.com", capstone_screenshot: "I_made_a_capstone.url", student_id: 2)
 
-Capstone.create!(capstone_name: "Look, a capstone", capstone_description: "Look, here is a capstone", capstone_url: "LookACapstone.com", capstone_screenshot: "look_its_a_capstone.url", student_id: 3)
+# Capstone.create!(capstone_name: "Look, a capstone", capstone_description: "Look, here is a capstone", capstone_url: "LookACapstone.com", capstone_screenshot: "look_its_a_capstone.url", student_id: 3)
 
-Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny bit proud of my decent capstone", capstone_url: "DecentCapstone.com", capstone_screenshot: "a_decent_capstone.url", student_id: 4)
+# Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny bit proud of my decent capstone", capstone_url: "DecentCapstone.com", capstone_screenshot: "a_decent_capstone.url", student_id: 4)
 
 Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
 
@@ -32,3 +32,4 @@ Experience.create!(start_date: "07-04-2012", end_date: "01-13-2023", job_title: 
 Experience.create!(start_date: "08-15-2018", end_date: "05-28-2099", job_title: "Cat Knight", company_name: "Royal Guard", details: "aslkdfjasdflk", student_id: 4)
 Experience.create!(start_date: "10-22-2021", end_date: "01-13-2023", job_title: "TA", company_name: "Actualize", details: "aslkdfjasdflk", student_id: 5)
 Experience.create!(start_date: "05-17-2017", end_date: "05-28-2023", job_title: "Owner", company_name: "Netflix", details: "I own Netflix", student_id: 6)
+# Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
