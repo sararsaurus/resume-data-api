@@ -2,12 +2,12 @@ class StudentsController < ApplicationController
   before_action :authenticate_student, except: [:index, :show]
 
   def index
-    students = Student.all
-    render json: students.as_json
+    @students = Student.all
+    render :index
   end
 
   def create
-    students = Student.new(
+    @students = Student.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
@@ -23,15 +23,15 @@ class StudentsController < ApplicationController
 
     )
     if students.save
-      render json: students
+      render students.as_json
     else
       render json: { errors: students.errors.full_messages }, status: :bad_request
     end
   end
 
   def show
-    student = Student.find_by(id: params[:id])
-    render json: student.as_json
+    @student = Student.find_by(id: params[:id])
+    render :show
   end
 
   def update
