@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_29_173421) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_29_174309) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_173421) do
     t.boolean "python", default: false
     t.boolean "javascript", default: false
     t.boolean "java", default: false
-    t.boolean "c", default: false
+    t.boolean "Csharp", default: false
     t.boolean "C", default: false
     t.boolean "Cplus", default: false
     t.boolean "GO", default: false
