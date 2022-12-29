@@ -1,0 +1,26 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJzdHVkZW50X2lkIjo4LCJleHAiOjE2NzI0Mjc1MTV9.HtCOqGJ1WWUkDk7uzzZUsVrrMCqfdJt6K2GAquQPo6Q
+
+### Index
+GET http://localhost:3000/skills
+### Show
+GET http://localhost:3000/skill/1
+### Create
+POST http://localhost:3000/skills 
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "python": true,
+  "javascript": true,
+  "java": false,
+  "Csharp": false,
+  "C": true,
+  "Cplus": true,
+  "GO": false,
+  "R": false,
+  "swift": true,
+  "PHP": false,
+  "other": "Ruby"
+}
+
+### UPDATE

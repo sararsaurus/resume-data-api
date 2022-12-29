@@ -8,7 +8,7 @@ Content-Type: application/json
 {
   "first_name": "Sam",
   "last_name":  "Gee",
-  "email":  "sam@example.com",
+  "email":  "sam@test.com",
   "phone_number": "123-456-4789",
   "short_bio":  "I am the best Hobbit",
   "linkedin_url": "linkedin.com/in/samwise",
@@ -16,7 +16,10 @@ Content-Type: application/json
   "online_resume_url": "Samwise.com/resume",
  "github_url": "github.com/Samwise",
  "photo_url": "https://static.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241",
- "personal_website_url": "samwise.com/aboutme"
+ "personal_website_url": "samwise.com/aboutme",
+  "password": "password",
+  "password_confirmation": "password"
+ 
 }
 
 ###
