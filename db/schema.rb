@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_28_231617) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_29_174309) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_231617) do
     t.boolean "python", default: false
     t.boolean "javascript", default: false
     t.boolean "java", default: false
-    t.boolean "c", default: false
+    t.boolean "Csharp", default: false
     t.boolean "C", default: false
     t.boolean "Cplus", default: false
     t.boolean "GO", default: false
@@ -58,6 +58,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_231617) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "other"
+    t.integer "student_id"
   end
 
   create_table "students", force: :cascade do |t|
