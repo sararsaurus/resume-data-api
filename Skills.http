@@ -24,3 +24,20 @@ Authorization: Bearer {{jwt}}
 }
 
 ### UPDATE
+PATCH http://localhost:3000/skills/1 
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "python": true,
+  "javascript": true,
+  "java": false,
+  "Csharp": false,
+  "C": true,
+  "Cplus": true,
+  "GO": false,
+  "R": false,
+  "swift": true,
+  "PHP": false,
+  "other": "Ruby"
+}
