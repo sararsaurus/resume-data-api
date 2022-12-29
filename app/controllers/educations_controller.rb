@@ -1,14 +1,14 @@
 class EducationsController < ApplicationController
   before_action :authenticate_student, except: [:index, :show]
-  
+
   def index
-    educations = Education.all
-    render json: educations.as_json
+    @educations = Education.all
+    render :index
   end
 
   def show
-    education = Education.find_by(id: params[:id])
-    render json: education.as_json
+    @education = Education.find_by(id: params[:id])
+    render :show
   end
 
   def create
