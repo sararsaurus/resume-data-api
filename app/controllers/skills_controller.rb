@@ -8,6 +8,7 @@ class SkillsController < ApplicationController
 
   def show
     skill = Skill.find_by(id: params[:id])
+    render json: skill
   end
 
   def create
