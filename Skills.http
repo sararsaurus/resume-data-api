@@ -10,7 +10,7 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "python": false,
+  "python": false, 
   "javascript": false,
   "java": true,
   "csharp": false,
