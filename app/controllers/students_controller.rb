@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :authenticate_student, except: [:index, :show]
+  before_action :authenticate_student, except: [:index, :create, :show]
 
   def index
     @students = Student.all
@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @students = Student.new(
+    students = Student.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
@@ -22,6 +22,7 @@ class StudentsController < ApplicationController
       password_confirmation: params[:password_confirmation],
 
     )
+
     if students.save
       render students.as_json
     else
