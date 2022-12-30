@@ -1,9 +1,13 @@
+# @jwt = 
+
+### STUDENTS INDEX
 GET  http://localhost:3000/students.json
 ###
-GET http://localhost:3000/students/1.json
+GET http://localhost:3000/students/6.json
 ### CREATE STUDENT
 POST http://localhost:3000/students.json
 Content-Type: application/json
+# Authorization: Bearer {{jwt}}
 
 {
   "first_name": "Johnny",
@@ -23,11 +27,12 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/students/1.json
+DELETE http://localhost:3000/students/6.json
 
 ### Edit one student
 PATCH  http://localhost:3000/students/7
 Content-Type: application/json
+# Authorization: Bearer {{jwt}}
 
 {
   "first_name": "Sam",
