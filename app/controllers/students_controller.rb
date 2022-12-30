@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    students = Student.new(
+    @student_signup = Student.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
@@ -22,11 +22,10 @@ class StudentsController < ApplicationController
       password_confirmation: params[:password_confirmation],
 
     )
-
-    if students.save
-      render students.as_json
+    if @student_signup.save
+      render json: @student_signup.as_json #{ message: "Successfully Signed up" }
     else
-      render json: { errors: students.errors.full_messages }, status: :bad_request
+      render json: { errors: @student_signup.errors.full_messages }, status: :bad_request
     end
   end
 

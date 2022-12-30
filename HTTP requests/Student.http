@@ -1,14 +1,14 @@
 GET  http://localhost:3000/students.json
 ###
-GET http://localhost:3000/students/6.json
+GET http://localhost:3000/students/1.json
 ### CREATE STUDENT
-POST http://localhost:3000/students
+POST http://localhost:3000/students.json
 Content-Type: application/json
 
 {
   "first_name": "Johnny",
   "last_name":  "Test",
-  "email":  "blueblu!e@example.com",
+  "email":  "test60@example.com",
   "phone_number": "123-456-4789",
   "short_bio":  "I do the test ",
   "linkedin_url": "linkedin.com",
@@ -23,9 +23,9 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/students/6.json
+DELETE http://localhost:3000/students/1.json
 
-### CREATE STUDENT
+### Edit one student
 PATCH  http://localhost:3000/students/7
 Content-Type: application/json
 
