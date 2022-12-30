@@ -1,4 +1,4 @@
-# @jwt = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJzdHVkZW50X2lkIjoyLCJleHAiOjE2NzI1MTA4MTZ9.9pPW6mc0z-_trRDyHOj8t3_GfKfH4HjoqHxlJMCXYeU
 
 ### Educations Index
 GET http://localhost:3000/educations.json
@@ -11,7 +11,8 @@ GET http://localhost:3000/educations/1.json
 ### Educations Create
 POST http://localhost:3000/educations.json
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt}}
+
 {
   "start_date": "08-20-2017",
   "end_date": "08-20-2021",
@@ -24,12 +25,12 @@ Content-Type: application/json
 ### Educations Update
 PATCH http://localhost:3000/educations/5.json
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt}}
 
 {
   "start_date": "02-15-2018"
 }
 
 ### Educations Destroy
-DELETE http://localhost:3000/educations/1.json
-# Authorization: Bearer {{jwt}}
+DELETE http://localhost:3000/educations/5.json
+Authorization: Bearer {{jwt}}
