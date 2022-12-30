@@ -12,7 +12,7 @@ Content-Type: application/json
 {
   "first_name": "Johnny",
   "last_name":  "Test",
-  "email":  "test60@example.com",
+  "email":  "test688@example.com",
   "phone_number": "123-456-4789",
   "short_bio":  "I do the test ",
   "linkedin_url": "linkedin.com",
