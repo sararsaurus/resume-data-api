@@ -28,76 +28,93 @@ Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny b
 
 Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
 
-Skill.create(
-  student_id: 1,
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
-Skill.create(
-  student_id: 2,
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
-Skill.create(
-  student_id: 3,
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
-Skill.create(
-  student_id: 4,
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
-Skill.create(
-  student_id: 5,
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
+Student.count.each do |student|
+  Skill.create(
+    student_id: 1,
+    python: true,
+    javascript: true,
+    java: false,
+    csharp: false,
+    c: true,
+    cplus: false,
+    go: false,
+    r: true,
+    swift: true,
+    php: true,
+    other: "other languages",
+  )
+end
+
+# Skill.create(
+#   student_id: 1,
+#   python: true,
+#   javascript: true,
+#   java: false,
+#   csharp: false,
+#   c: true,
+#   cplus: false,
+#   go: false,
+#   r: true,
+#   swift: true,
+#   php: true,
+#   other: "other languages",
+# )
+# Skill.create(
+#   student_id: 2,
+#   python: true,
+#   javascript: true,
+#   java: false,
+#   csharp: false,
+#   c: true,
+#   cplus: false,
+#   go: false,
+#   r: true,
+#   swift: true,
+#   php: true,
+#   other: "other languages",
+# )
+# Skill.create(
+#   student_id: 3,
+#   python: true,
+#   javascript: true,
+#   java: false,
+#   csharp: false,
+#   c: true,
+#   cplus: false,
+#   go: false,
+#   r: true,
+#   swift: true,
+#   php: true,
+#   other: "other languages",
+# )
+# Skill.create(
+#   student_id: 4,
+#   python: true,
+#   javascript: true,
+#   java: false,
+#   csharp: false,
+#   c: true,
+#   cplus: false,
+#   go: false,
+#   r: true,
+#   swift: true,
+#   php: true,
+#   other: "other languages",
+# )
+# Skill.create(
+#   student_id: 5,
+#   python: true,
+#   javascript: true,
+#   java: false,
+#   csharp: false,
+#   c: true,
+#   cplus: false,
+#   go: false,
+#   r: true,
+#   swift: true,
+#   php: true,
+#   other: "other languages",
+# )
 
 Experience.create!(student_id: 5, start_date: "02-20-2023", end_date: "05-24-2023", job_title: "TA", company_name: "Actualize", details: "Teaching assistant for Actualize!")
 Experience.create!(student_id: 4, start_date: "05-20-2017", end_date: "05-24-2019", job_title: "Manager", company_name: "Arby's", details: "Ran that bitch like the Navy.")
