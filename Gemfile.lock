@@ -195,11 +195,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.4)
-<<<<<<< HEAD
-  rspec-rails (~> 5.0.0)
-=======
   rspec-rails (~> 6.0.0)
->>>>>>> 3cc35820f34831dd2aa7fa6575935ecffe87c617
   seed_dump
   tzinfo-data
 
