@@ -23,7 +23,7 @@ class EducationsController < ApplicationController
     if education.save
       render json: education.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @education.errors.full_messages }, status: 418
     end
   end
 
@@ -39,7 +39,7 @@ class EducationsController < ApplicationController
     if education.save
       render json: education.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @education.errors.full_messages }, status: 418
     end
   end
 
