@@ -43,7 +43,7 @@ Skill.create(
   other: "other languages",
 )
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 1,
   python: true,
   javascript: true,
   java: false,
@@ -56,8 +56,8 @@ Skill.create(
   php: true,
   other: "other languages",
 )
-Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+Skill.create!(
+  student_id: 2,
   python: true,
   javascript: true,
   java: false,
@@ -70,8 +70,8 @@ Skill.create(
   php: true,
   other: "other languages",
 )
-Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+Skill.create!(
+  student_id: 3,
   python: true,
   javascript: true,
   java: false,
@@ -84,8 +84,22 @@ Skill.create(
   php: true,
   other: "other languages",
 )
-Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+Skill.create!(
+  student_id: 4,
+  python: true,
+  javascript: true,
+  java: false,
+  csharp: false,
+  c: true,
+  cplus: false,
+  go: false,
+  r: true,
+  swift: true,
+  php: true,
+  other: "other languages",
+)
+Skill.create!(
+  student_id: 5,
   python: true,
   javascript: true,
   java: false,
@@ -100,11 +114,7 @@ Skill.create(
 )
 
 Experience.create!(student_id: 5, start_date: "02-20-2023", end_date: "05-24-2023", job_title: "TA", company_name: "Actualize", details: "Teaching assistant for Actualize!")
-
 Experience.create!(student_id: 4, start_date: "05-20-2017", end_date: "05-24-2019", job_title: "Manager", company_name: "Arby's", details: "Ran that bitch like the Navy.")
-
 Experience.create!(student_id: 3, start_date: "07-04-1976", end_date: "07-4-2016", job_title: "Soup Tester", company_name: "Panera", details: "I taste the soups.")
-
 Experience.create!(student_id: 2, start_date: "04-08-2004", end_date: "02-20-2017", job_title: "Airline Pilot", company_name: "Southwest", details: "I did a barrel roll and got fired.")
-
 Experience.create!(student_id: 1, start_date: "08-14-2012", end_date: "12-07-2018", job_title: "Owner", company_name: "Netflix", details: "I owned Netflix and lost it in a bet for half a sandwich and $11")
