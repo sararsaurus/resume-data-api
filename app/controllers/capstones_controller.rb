@@ -1,4 +1,4 @@
-class CapstoneController < ApplicationController
+class CapstonesController < ApplicationController
   before_action :authenticate_student, except: [:index, :show]
 
   def index
@@ -22,7 +22,7 @@ class CapstoneController < ApplicationController
     if capstone.save
       render json: capstone.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @capstone.errors.full_messages }, status: 418
     end
   end
 
@@ -37,7 +37,7 @@ class CapstoneController < ApplicationController
     if capstone.save
       render json: capstone.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @capstone.errors.full_messages }, status: 418
     end
   end
 
