@@ -3,7 +3,7 @@
 ### Index
 GET http://localhost:3000/skills
 ### Show
-GET http://localhost:3000/skill/1
+GET http://localhost:3000/localhost:3000/skills/1
 ### Create
 POST http://localhost:3000/skills 
 Content-Type: application/json
