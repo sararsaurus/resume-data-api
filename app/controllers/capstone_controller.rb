@@ -1,14 +1,14 @@
 class CapstoneController < ApplicationController
   before_action :authenticate_student, except: [:index, :show]
-  
+
   def index
-    capstones = Capstone.all
-    render json: capstones.as_json
+    @capstones = Capstone.all
+    render :index
   end
 
   def show
-    capstone = Capstone.find_by(id: params[:id])
-    render json: capstone.as_json
+    @capstone = Capstone.find_by(id: params[:id])
+    render :show
   end
 
   def create

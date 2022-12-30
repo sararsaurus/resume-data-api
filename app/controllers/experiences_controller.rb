@@ -2,13 +2,13 @@ class ExperiencesController < ApplicationController
   before_action :authenticate_student, except: [:index, :show]
 
   def index
-    experiences = Experience.all
-    render json: experiences.as_json
+    @experiences = Experience.all
+    render :index
   end
 
   def show
-    experience = Experience.find_by(id: params[:id])
-    render json: experience.as_json
+    @experience = Experience.find_by(id: params[:id])
+    render :show
   end
 
   def create

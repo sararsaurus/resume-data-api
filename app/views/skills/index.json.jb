@@ -1,0 +1,16 @@
+@skills.map do |skill|
+  {
+    id: skill.id,
+    python: skill.python,
+    javascript: skill.javascript,
+    java: skill.java,
+    csharp: skill.csharp,
+    c: skill.c,
+    cplus: skill.cplus,
+    go: skill.go,
+    r: skill.r,
+    swift: skill.swift,
+    php: skill.php,
+    student_id: skill.student_id
+  }
+end
