@@ -3,7 +3,7 @@
 ### STUDENTS INDEX
 GET  http://localhost:3000/students.json
 ###
-GET http://localhost:3000/students/6.json
+GET http://localhost:3000/students/1.json
 ### CREATE STUDENT
 POST http://localhost:3000/students.json
 Content-Type: application/json

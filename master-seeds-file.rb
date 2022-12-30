@@ -29,7 +29,7 @@ Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny b
 Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
 
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 1,
   python: true,
   javascript: true,
   java: false,
@@ -43,7 +43,7 @@ Skill.create(
   other: "other languages",
 )
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 2,
   python: true,
   javascript: true,
   java: false,
@@ -57,7 +57,7 @@ Skill.create(
   other: "other languages",
 )
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 3,
   python: true,
   javascript: true,
   java: false,
@@ -71,7 +71,7 @@ Skill.create(
   other: "other languages",
 )
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 4,
   python: true,
   javascript: true,
   java: false,
@@ -85,7 +85,7 @@ Skill.create(
   other: "other languages",
 )
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
+  student_id: 5,
   python: true,
   javascript: true,
   java: false,
