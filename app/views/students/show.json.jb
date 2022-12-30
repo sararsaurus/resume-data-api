@@ -13,5 +13,6 @@
     personal_website_url: @student.personal_website_url,
     capstones: @student.capstones,
     educations: @student.educations,
+    experiences: @student.experiences,
     skills: @student.skills
 }
