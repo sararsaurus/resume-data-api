@@ -1,0 +1,35 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJzdHVkZW50X2lkIjo2LCJleHAiOjE2NzI0Mzc1MDZ9.nCK8OWvY4v1zfKxU4V_scKUmxmaOUf9OtQbyF9dugHQ
+
+### INDEX
+GET http://localhost:3000/experiences
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+### SHOW
+GET http://localhost:3000/experiences/1
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+### CREATE
+POST http://localhost:3000/experiences/6
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "student_id": 6, 
+  "start_date": "01-01-2000",
+  "end_date": "12-31-2099",
+  "job_title": "Brain Genius",
+  "company_name": "SmartCorp",
+  "details": "aslkdfjhasdkf"
+}
+
+### UPDATE
+PATCH http://localhost:3000/experiences/6
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "details": "details update test"
+}
+
