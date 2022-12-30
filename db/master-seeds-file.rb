@@ -29,20 +29,6 @@ Capstone.create!(capstone_name: "Decent capstone", capstone_description: "Tiny b
 Capstone.create!(capstone_name: "Badass capstone", capstone_description: "The most badass capstone ever", capstone_url: "BadassCapstone.com", capstone_screenshot: "badass_capstone.url", student_id: 5)
 
 Skill.create(
-  student_id: rand(Student.ids.min..Student.ids.max),
-  python: true,
-  javascript: true,
-  java: false,
-  csharp: false,
-  c: true,
-  cplus: false,
-  go: false,
-  r: true,
-  swift: true,
-  php: true,
-  other: "other languages",
-)
-Skill.create(
   student_id: 1,
   python: true,
   javascript: true,
