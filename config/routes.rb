@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :skills
   resources :students
   resources :educations
-  resources :capstones
+  resources :capstoness
   resources :experiences
   resources :skills
 

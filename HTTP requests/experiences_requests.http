@@ -1,17 +1,14 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJzdHVkZW50X2lkIjo2LCJleHAiOjE2NzI0Mzc1MDZ9.nCK8OWvY4v1zfKxU4V_scKUmxmaOUf9OtQbyF9dugHQ
 
 ### INDEX
-GET http://localhost:3000/experiences
-Content-Type: application/json
-Authorization: Bearer {{jwt}}
+GET http://localhost:3000/experiences.json
+
 
 ### SHOW
-GET http://localhost:3000/experiences/1
-Content-Type: application/json
-Authorization: Bearer {{jwt}}
+GET http://localhost:3000/experiences/6.json
 
 ### CREATE
-POST http://localhost:3000/experiences/6
+POST http://localhost:3000/experiences/
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
@@ -33,3 +30,8 @@ Authorization: Bearer {{jwt}}
   "details": "details update test"
 }
 
+### DELETE
+
+DELETE http://localhost:3000/experiences/7
+Content-Type: application/json
+Authorization: Bearer {{jwt}}

@@ -13,6 +13,7 @@ class EducationsController < ApplicationController
 
   def create
     education = Education.create(
+      student_id: current_student.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
@@ -22,7 +23,7 @@ class EducationsController < ApplicationController
     if education.save
       render json: education.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @education.errors.full_messages }, status: 418
     end
   end
 
@@ -38,7 +39,7 @@ class EducationsController < ApplicationController
     if education.save
       render json: education.as_json
     else
-      ender json: { errors: @product.errors.full_messages }, status: 418
+      render json: { errors: @education.errors.full_messages }, status: 418
     end
   end
 
