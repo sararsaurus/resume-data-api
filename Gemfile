@@ -50,4 +50,5 @@ group :development do
 end
 gem 'jwt'
 gem "seed_dump"
+gem 'rails_refactor', '~> 1.3'
 
