@@ -1,33 +1,32 @@
-# @jwt = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJzdHVkZW50X2lkIjo2LCJleHAiOjE2NzI1MTE4MzB9.-leMZIBf1SYF3x39aH-YLWJ4vfbCEB2BQtmylK_LqyQ
 
 ### INDEX CAPSTONES
-GET  http://localhost:3000/capstones/1.json
+GET  http://localhost:3000/capstones.json
 
 
 ### SHOW CAPSTONES
 GET  http://localhost:3000/capstones/1.json
 
 ### CREATE CAPSTONE
-POST http://localhost:3000/capstones/6.json
+POST http://localhost:3000/capstones
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt}}
 
 {
   "capstone_name": "So Proud of It",
   "capstone_description":  "Coded so hard and here we are.",
   "capstone_url":  "SoProudOfMyCapstone.url",
-  "capstone_screenshot": "screenshot.jpg",
-  "student_id": 4
+  "capstone_screenshot": "screenshot.jpg"
 }
 
 ### DELETE CAPSTONE
-DELETE http://localhost:3000/capstones/2.json
-# Authorization: Bearer {{jwt}}
+DELETE http://localhost:3000/capstones/11.json
+Authorization: Bearer {{jwt}}
 
 ### UPDATE CAPSTONE
-PATCH  http://localhost:3000/capstones/4.json
+PATCH  http://localhost:3000/capstones/12.json
 Content-Type: application/json
-# Authorization: Bearer {{jwt}}
+Authorization: Bearer {{jwt}}
 
 {
   "capstone_name": "So Proud of It",
