@@ -1,8 +1,8 @@
 {
-  id: @capstone.id,
-    name: @capstone.name,
-    description: @capstone.description,
-    capstone_url: @capstone.capstone_url,
-    capstone_screenshot: @capstone.capstone_screenshot,
-    student_id: @capstone.student_id
+  id: @experience.id,
+  end_date: @experience.end_date,
+  job_title: @experience.job_title,
+  company_name: @experience.company_name,
+  details: @experience.details,
+  student_id: @experience.student_id
 }
