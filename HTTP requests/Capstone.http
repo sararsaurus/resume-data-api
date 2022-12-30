@@ -1,7 +1,11 @@
 # @jwt = 
 
+### INDEX CAPSTONES
+GET  http://localhost:3000/capstones/1.json
+
+
 ### SHOW CAPSTONES
-GET  http://localhost:3000/capstones.json
+GET  http://localhost:3000/capstones/1.json
 
 ### CREATE CAPSTONE
 POST http://localhost:3000/capstones/6.json
